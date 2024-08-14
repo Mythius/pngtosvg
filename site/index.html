@@ -22,7 +22,19 @@
 
 		let corners = [];
 
-		const animate_draw = 0;
+		const animate_draw = 1;
+
+		let imgs = [
+			'puzzle.jpg',
+			'sun.png',
+			'puzzle2.png',
+			'waky.png',
+			'america.png',
+			'pentagon.png',
+			'convexconcave.gif',
+			'complex.png',
+			'svg.png'
+		];
 
 		let img = new Image;
 		// img.src = 'puzzle.jpg';
@@ -33,7 +45,8 @@
 		// img.src = 'pentagon.png';
 		// img.src = 'convexconcave.gif';
 		// img.src = 'complex.png';
-		img.src = 'svg.png';
+		// img.src = 'svg.png';
+		img.src = imgs[random(0,imgs.length-1)];
 		img.onload = loop;
 		let points = null;
 
